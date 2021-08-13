@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset= "utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>VeganValued</title>
+		<link rel="shortcut icon" href="images/favicon.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href= "style.css">
+	</head>
+	<body>
+		<!--Creates the banner at the top of the site-->
+		<div id="banner_container">
+			<div id="banner_text"><b>VeganValued</b></div>
+		</div>
+		<!--Creates the tab links under the banner-->
+		<button class="home_tablink" onclick="openPage('Home', this)" id="defaultOpen"><b>OUR STORY</b></button>
+		<button class="grocers_tablink" onclick="openPage('Grocers', this)"><b>FIND ETHNIC GROCERS</b></button>
+		<button class="recipes_tablink" onclick="openPage('Recipes', this)"><b>LEARN NEW RECIPES</b></button>
+
+		<!--Content of the Home tab-->
+		<div id="Home" class="tabcontent">
+			<div class="container">
+				<div id="about_text" class="center"><b>ABOUT</b></div>
+			</div>
+			<div class="container">
+				<div id="our_mission" class="center"><b>OUR MISSION</b></div>
+			</div>
+			<image src="images/logo.jpg" class="center"></image>
+		</div>
+
+		<!--Content of the Grocers tab-->
+		<div id="Grocers" class="tabcontent">
+			<h1 class="header"><b>See South Florida Ethnic Grocery Locations!</b></h1>
+			<div id="map"></div>
+		</div>
+
+		<!--Content of the Recipes tab-->
+		<div id="Recipes" class="tabcontent">
+			<h1 class="header"><b>Sustainable Ethnic Cuisine</b></h1>
+			<h1 id="sub_header">Our Recipe List</h1>
+		</div>
+
+		<!--API key for the Google Maps Javascript API-->
+		<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTzxoyYMy16TMeGkkLSPEpYGrMnDfTKkc&callback=initMap"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
