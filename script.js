@@ -1,4 +1,29 @@
-// Function that creates the map
+// Gets the element with the id "defaultOpen" and clicks it automatically when the website is opened
+document.getElementById("defaultOpen").click();
+
+// Opens pages when user clicks the tabs
+function openPage(pageName, elmnt)
+{
+  // Hides all elements of the class "tabcontent"
+  var i, tabcontent;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++)
+  {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Shows the content of the desired tab
+  document.getElementById(pageName).style.display = "block";
+
+  // Animates page contents by making them slowly appear
+  $('.tabcontent').animate({opacity: 0.25}, "slow", makeOpaque());
+  function makeOpaque()
+  {
+     $('.tabcontent').animate({opacity: 1});
+  }
+}
+
+// Function to create the map of grocery stores
 function initMap()
 {
 	var options=
@@ -63,21 +88,3 @@ function initMap()
 	}
 	return map;
 }
-
-// Opens pages when user clicks the tabs
-function openPage(pageName, elmnt)
-{
-  // Hides all elements of the class "tabcontent"
-  var i, tabcontent;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++)
-  {
-    tabcontent[i].style.display = "none";
-  }
-
-  // Shows the tab content
-  document.getElementById(pageName).style.display = "block";
-}
-
-// Gets the element with id="defaultOpen" and click it automatically when the website is opened
-document.getElementById("defaultOpen").click();
