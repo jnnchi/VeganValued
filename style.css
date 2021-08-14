@@ -8,7 +8,7 @@ body, html {
 #banner_container {
     background: radial-gradient(#90dfa1, #bbf2c2);
     height: 25vh;
-    width: 100vw;
+    width: 99vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,26 +78,28 @@ body, html {
 #Grocers {background: linear-gradient(#fff5b3, #feffd6);}
 #Recipes {background: linear-gradient(#dfb2ff, #e7d4fe);}
 
+/* Styles Homepage headers */
 .container {
   background-color: transparent;
-  height: 25vh;
+  height: 15vh;
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 30px;
 }
 
-/* Styles Homepage headers */
 #about_text {
+    text-align: center;
     height: 100px;
     width: 325px;
     background:url(images/chop_kale.gif);
     background-size: 325px 100px;
     font-size: 90px;
-    -webkit-text-fill-color:transparent;
-    -webkit-background-clip:text;
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip:text;
 }
 
 #our_mission {
@@ -111,6 +113,51 @@ body, html {
     -webkit-background-clip: text;
 }
 
+/* Styles the quote on the Home page */
+.quote_container {
+  background-color: transparent;
+  height: 350px;
+  width: 1500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0px 40px 80px;
+}
+
+.quote {
+	text-align: center;
+	margin: 0px 300px 0px 20px;
+	background:url(images/sakura.gif);
+    background-size: 1000px 150px;
+    font-size: 30px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.image {
+   height: 400px;
+   width 400px;
+   display: block;
+   margin-left: 125px;
+   margin-right: auto;
+   border-radius: 35px;
+   border-style: dotted;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.text {
+    margin: 0px 200px 0px 200px;
+    font-size: 20px;
+}
+
 .header {
 	text-align: center;
 	background:url(images/misc_veggies.gif);
@@ -122,15 +169,31 @@ body, html {
     -webkit-background-clip: text;
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
+/* Styles the map */
 #map {
 	height: 700px;
 	width: 100%;
     border-radius: 35px;
+    border-style: double;
+}
+
+/* Styles the Recipe pictures and text */
+.recipe_container {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 490px;
+}
+
+.recipe_visual {
+    height: 300px;
+    width 300px;
+    border-radius: 35px;
+    border-style: dotted;
+}
+
+.caption {
+    display: block;
+    font-size: 30px;
+    text-align: center;
 }
