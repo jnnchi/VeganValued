@@ -89,7 +89,11 @@ function initMap()
 		{coords:{lat: 28.562247824454715, lng: -81.58151134577791},
 		    content: "<h1>Spice Culture Grocery Store & Kitchen</h1><h3>This store features Indian, Pakistani, Middle Eastern, and Caribbean products, specializing in spices, rice, atta, organic food, and more.</h3>"},
 		{coords:{lat: 26.4450179412948, lng: -81.41840546417168},
-		    content: "<h1>Legrand Caribbean Market</h1><h3>This store has amazing Cuban sandwiches, bread, and canned goods!</h3>"}];
+		    content: "<h1>Legrand Caribbean Market</h1><h3>This store has amazing Cuban sandwiches, bread, and canned goods!</h3>"},
+		{coords:{lat: 26.438532259138626, lng: -81.76730547721365},
+		    content: "<h1>Regi Universal Supermarket</h1><h3>This supermarket is a great place to find your favorite Hispanic items! They have tons of fresh produce and even a hot food section in the back.</h3>"},
+		{coords:{lat: 26.210899616776384, lng: -81.79838153348467},
+		    content: "<h1>Lee Asian Market</h1><h3>This Asian market is always well-stocked and impeccably clean. They offer fresh produce, herbs, sake, and even hand-made boba!</h3>"}];
 
 	// Loops through the array of markers and adds them to the map
 	for(var i=0; i < stores.length; i++)
