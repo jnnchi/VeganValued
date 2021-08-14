@@ -29,7 +29,7 @@ function initMap()
 	var options=
 	{
 		zoom: 9,
-		center: {lat: 26.132171978945507, lng: -80.13757135767017} // Centers on South Florida
+		center: {lat: 26.173148381193478, lng: -80.25608220426022} // Centers on South Florida
 	}
 	var map = new google.maps.Map(document.getElementById('map'), options);
 
@@ -79,7 +79,17 @@ function initMap()
 		{coords:{lat: 25.828524038826085, lng: -80.20023254381091},
 		    content: "<h1>Zubi Supermarket</h1><h3>This Hatian grocery store provides reliable products at an affordable price, with great fresh food, a convenient venue, and even a selection of Asian products too!</h3>"},
 		{coords:{lat: 25.92901556500128, lng: -80.19557654565614},
-		    content: "<h1>Caribbean Best Market</h1><h3>This Caribbean grocery and spices store has amazing prices and very fresh products. Stop by to pick up rare Caribbean snacks and food!</h3>"}];
+		    content: "<h1>Caribbean Best Market</h1><h3>This Caribbean grocery and spices store has amazing prices and very fresh products. Stop by to pick up rare Caribbean snacks and food!</h3>"},
+		{coords:{lat: 26.582009014989502, lng: -81.8733321155531},
+		    content: "<h1>Petra Mediterranean Market</h1><h3>This market carries well-priced, high quality Middle Eastern goods. Come here for fresh vegetables, pickled goods, and more!</h3>"},
+		{coords:{lat: 29.068751152383832, lng: -81.30042541806849},
+		    content: "<h1>Deland Asian Market</h1><h3>This market has goods from the Philippines, Laos, Thailand, Vietnam, Korea, and Japan. If there’s any Asian produce you’re looking for, you’ll be sure to find it at Deland!</h3>"},
+		{coords:{lat: 28.108250540767735, lng: -80.59131976167939},
+		    content: "<h1>Ndibai Ethnic Foods</h1><h3>Ndibai carries a large variety of African food products and meals from West, East, and Central Africa. It has a great selection and very high quality products!</h3>"},
+		{coords:{lat: 28.562247824454715, lng: -81.58151134577791},
+		    content: "<h1>Spice Culture Grocery Store & Kitchen</h1><h3>This store features Indian, Pakistani, Middle Eastern, and Caribbean products, specializing in spices, rice, atta, organic food, and more.</h3>"},
+		{coords:{lat: 26.4450179412948, lng: -81.41840546417168},
+		    content: "<h1>Legrand Caribbean Market</h1><h3>This store has amazing Cuban sandwiches, bread, and canned goods!</h3>"}];
 
 	// Loops through the array of markers and adds them to the map
 	for(var i=0; i < stores.length; i++)
