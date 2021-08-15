@@ -33,31 +33,31 @@ function initMap()
 	}
 	var map = new google.maps.Map(document.getElementById('map'), options);
 
-	// Function to add markers to map
+	// Function to add markers of ethnic grocers to map
 	function addMarker(props)
+	{
+		var marker = new google.maps.Marker
+		({
+			position: props.coords,
+			map: map,
+			icon: 'images/store.png'
+		});
+
+		// Check content
+		if(props.content)
 		{
-			var marker= new google.maps.Marker
+			var infoWindow = new google.maps.InfoWindow
 			({
-				position: props.coords,
-				map: map,
-				icon: 'images/store.png'
+				content: props.content
 			});
 
-			// Check content
-			if(props.content)
+			marker.addListener('click', function()
 			{
-				var infoWindow= new google.maps.InfoWindow
-				({
-					content: props.content
-				});
-
-				marker.addListener('click', function()
-				{
-				infoWindow.open(map, marker);
-				});
-			}
-
+			infoWindow.open(map, marker);
+			});
 		}
+
+	}
 
 	// Creates array of ethnic stores to be marked on the map
 	var stores = [{coords:{lat: 26.161399854632002, lng: -80.28572522613747},
@@ -96,7 +96,7 @@ function initMap()
 		    content: "<h1>Lee Asian Market</h1><h3>This Asian market is always well-stocked and impeccably clean. They offer fresh produce, herbs, sake, and even hand-made boba!</h3>"}];
 
 	// Loops through the array of markers and adds them to the map
-	for(var i=0; i < stores.length; i++)
+	for(var i = 0; i < stores.length; i++)
 	{
 		addMarker(stores[i])
 	}
