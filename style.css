@@ -24,7 +24,7 @@ body, html {
     text-align: center;
 }
 
-/* Style tab links (the buttons to the tabs) */
+/* Styles tab links (the buttons to the tabs) */
 .home_tablink {
   background:url(images/curry.gif);
   color: black;
@@ -67,13 +67,38 @@ body, html {
   -webkit-text-stroke-width: 1px;
 }
 
+/* Styles content of the tabs */
 .tabcontent {
   display: none;
   padding: 100px 20px;
   overflow: hidden;
 }
 
-/* Styles the backgrounds of the tabs */
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.text {
+    margin: 0px 200px 0px 200px;
+    font-size: 20px;
+}
+
+.header {
+	text-align: center;
+	background:url(images/misc_veggies.gif);
+    background-size: 1000px 150px;
+    font-size: 90px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+/* Creates gradient backgrounds for the tabs */
 #Home {background: linear-gradient(#ffd1fe, #fdddff);}
 #Grocers {background: linear-gradient(#fff5b3, #feffd6);}
 #Recipes {background: linear-gradient(#dfb2ff, #e7d4fe);}
@@ -125,9 +150,9 @@ body, html {
 }
 
 .quote {
-	text-align: center;
-	margin: 0px 300px 0px 20px;
-	background:url(images/sakura.gif);
+    text-align: center;
+    margin: 0px 300px 0px 20px;
+    background:url(images/sakura.gif);
     background-size: 1000px 150px;
     font-size: 30px;
     -webkit-text-stroke-color: black;
@@ -144,29 +169,6 @@ body, html {
    margin-right: auto;
    border-radius: 150px;
    border-style: dotted;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
-.text {
-    margin: 0px 200px 0px 200px;
-    font-size: 20px;
-}
-
-.header {
-	text-align: center;
-	background:url(images/misc_veggies.gif);
-    background-size: 1000px 150px;
-    font-size: 90px;
-    -webkit-text-stroke-color: black;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
 }
 
 /* Styles the map */
