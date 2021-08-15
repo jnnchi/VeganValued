@@ -5,7 +5,7 @@ This project was created by Jennifer Chiou, Adrianna Grant, and Angelina Wu usin
 
 ## Instructions for Use:
 For those cloning our repository:
-> Please download our "images" folder, HTML, CSS, and Javascript files to your device. Make sure that all files are named correctly!
+> Please download our project as a ZIP file to your device, then unzip it.
 > 
 > After that, simply click on the HTML file and enjoy!
 > 
